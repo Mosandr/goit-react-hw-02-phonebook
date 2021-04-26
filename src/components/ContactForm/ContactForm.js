@@ -44,6 +44,7 @@ class ContactForm extends Component {
     const { name, number } = this.state;
     const idForName = shortId.generate();
     const idForNumber = shortId.generate();
+
     return (
       <form className={styles.ContactForm} onSubmit={this.handleSubmit}>
         <label className={styles.label} htmlFor={idForName}>
